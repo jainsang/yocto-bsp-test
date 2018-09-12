@@ -6,8 +6,8 @@ class BspRuntimeTest(OERuntimeTestCase):
 
     @OETestID(001)
     def test_print_message():
-        command = (print "Hello World from Sangeeta")
+	command = (print "Hello World from Sangeeta")
 	status, output = self.target.run(command)
-        msg = ('testcase not working as expected. '
+	msg = ('testcase not working as expected. '
                 'Status and output:%s and %s.' % (status, output))
-        self.assertEqual(status, 0, msg = msg)
+	self.assertEqual(status, 0, msg = msg)
