@@ -5,7 +5,7 @@ from oeqa.core.decorator.oeid import OETestID
 class BspRuntimeTest(OERuntimeTestCase):
 
     @OETestID(001)
-    def test_print_message():
+    def test_print_message(self):
 	command = (print "Hello World from Sangeeta")
 	status, output = self.target.run(command)
 	msg = ('testcase not working as expected. '
